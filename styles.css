@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+.buffer {
+  font-size: 3rem;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.intro {
+  height: 100vh;
+  position: relative;
+}
+
+.intro > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem;
+  position: absolute;
+}
+
+.intro > div > * {
+  transition: all 2s;
+}
+
+.intro h1 {
+  font-size: 5rem;
+}
+
+.intro p {
+  font-size: 2rem;
+}
+
+.intro span {
+  font-size: 1.5rem;
+}
+
+.hidden {
+  transform: scale(2);
+  opacity: 0;
+}
